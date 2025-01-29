@@ -29,3 +29,10 @@ export const StyledLink = styled.a`
     box-shadow: 0 0 28px rgba(255, 133, 214, 1);
   }
 `;
+
+export const StyledBar = styled.nav`
+  margin: 15px auto;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+`;

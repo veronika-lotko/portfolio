@@ -1,11 +1,11 @@
 import React from "react";
-import NavigationLink from "../../atoms/nav-link";
-import { StyledBar } from "./styled";
+import MenuLink from "./MenuLink";
+import { StyledBar } from "./styles";
 
 const NavigationBar = () => {
   return (
     <StyledBar className="navigation">
-      <NavigationLink />
+      <MenuLink />
     </StyledBar>
   );
 };

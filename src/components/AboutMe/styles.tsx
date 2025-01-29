@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mquery } from "../../../constants";
+import { mquery } from "../../constants";
 
 // Create a styled div component
 export const Wrapper = styled.div`

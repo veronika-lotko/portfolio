@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledLink } from "./styles";
 
-const NavigationLink = () => {
+const MenuLink = () => {
   const menuItems = [
     { name: "About me", href: "#" },
     { name: "Work experience", href: "#" },
@@ -19,4 +19,4 @@ const NavigationLink = () => {
   );
 };
 
-export default NavigationLink;
+export default MenuLink;
