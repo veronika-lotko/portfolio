@@ -3,9 +3,11 @@ import { Wrapper } from "./styles";
 
 const AboutMeSection = () => {
   return (
-    <Wrapper className="about-section">
-      <h1>ABOUT ME</h1>
-    </Wrapper>
+    <section id="contact">
+      <Wrapper className="about-section">
+        <h1>ABOUT ME</h1>
+      </Wrapper>
+    </section>
   );
 };
 

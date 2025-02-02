@@ -3,10 +3,11 @@ import { StyledLink } from "./styles";
 
 const MenuLink = () => {
   const menuItems = [
-    { name: "About me", href: "#" },
-    { name: "Work experience", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "About me", href: "#about" },
+    { name: "Work experience", href: "#work" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
   return (
     <>

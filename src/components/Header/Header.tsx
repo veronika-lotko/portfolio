@@ -1,13 +1,15 @@
 import React from "react";
-import MenuLink from "./MenuLink";
-import { StyledBar } from "./styles";
+import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
+import { useWindowSize } from "@uidotdev/usehooks";
+import { breakpoints } from "../../constants";
 
 const NavigationBar = () => {
-  return (
-    <StyledBar className="navigation">
-      <MenuLink />
-    </StyledBar>
-  );
+  const { width } = useWindowSize();
+  const screenWidth = width ?? 0;
+  const isDesktop = screenWidth >= breakpoints.laptop;
+
+  return isDesktop ? <DesktopMenu /> : <MobileMenu />;
 };
 
 export default NavigationBar;

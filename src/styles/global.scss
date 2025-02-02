@@ -12,12 +12,16 @@
   --circle-size: 70%;
   --blending: hard-light;
   --font: "Dongle", sans-serif;
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-hover: #ee42b5;
 }
 
 html, body {
   font-family: var(--font);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 // Gradient styling
 

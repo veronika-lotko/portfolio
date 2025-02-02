@@ -1,14 +1,14 @@
 export const breakpoints = {
-  mobile: "480px",
-  tablet: "768px",
-  laptop: "1024px",
-  desktop: "1200px",
+  mobile: 480,
+  tablet: 768,
+  laptop: 1024,
+  desktop: 1200,
 };
 
 // Media queries
 export const mquery = {
-  mobile: `(mix-width: ${breakpoints.mobile})`,
-  tablet: `(min-width: ${breakpoints.tablet})`,
-  laptop: `(min-width: ${breakpoints.laptop})`,
-  desktop: `(min-width: ${breakpoints.desktop})`,
+  mobile: `(min-width: ${breakpoints.mobile}px)`,
+  tablet: `(min-width: ${breakpoints.tablet}px)`,
+  laptop: `(min-width: ${breakpoints.laptop}px)`,
+  desktop: `(min-width: ${breakpoints.desktop}px)`,
 };
