@@ -28,12 +28,8 @@ export const StyledLink = styled.a`
       color: var(--color-black);
       transform: none;
     }
-    &:focus {
-      background: var(--color-white);
-      color: var(--color-black);
-      box-shadow: 0 0 28px var(--color-hover);
-    }
-    &:focus-visible {
+    &:focus,
+    &.active {
       background: var(--color-white);
       color: var(--color-black);
       box-shadow: 0 0 28px var(--color-hover);
