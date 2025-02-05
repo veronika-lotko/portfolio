@@ -1,23 +1,37 @@
 import styled from "styled-components";
 import { mquery } from "../../constants";
 
-// Create a styled div component
-export const Wrapper = styled.div`
+export const MainWrapper = styled.div`
   margin: auto;
   position: relative;
   z-index: 10;
   padding: 20px;
-  /* background-color: #ffffff26; */
-  border-radius: 20px;
-  border: 1px solid;
-  color: white;
   min-height: 200px;
   max-width: 900px;
 
-  /* @media ${mquery.tablet} {
-    min-height: 400px;
+  .circle-container {
+    display: flex;
+    justify-content: end;
   }
-  @media ${mquery.desktop} {
-    min-height: 600px;
-  } */
+
+  p {
+    mix-blend-mode: difference;
+    @media ${mquery.laptop} {
+      mix-blend-mode: color;
+    }
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+`;
+
+export const Circle = styled.div`
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
 `;

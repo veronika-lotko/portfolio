@@ -15,6 +15,11 @@
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
   --color-hover: #ee42b5;
+  --font-size-mobile: 60px;
+  --font-size-tablet: 80px;
+  --font-size-laptop: 120px;
+  --font-size-desktop: 150px;
+  --font-size-regular: 38px;
 }
 
 html, body {
@@ -23,7 +28,6 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
 }
-// Gradient styling
 
 .background {
   width: 100vw;
@@ -39,4 +43,66 @@ html, body {
   svg {
     display: none;
   } 
+}
+
+
+h1 {
+  font-size: var(--font-size-mobile);
+  font-style: normal;
+  font-weight: 100;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-laptop);
+  }
+
+  @media (min-width: 768) {
+    font-size: var(--font-size-tablet)
+  }
+
+  @media (min-width: 1440px) {
+    font-size: var(--font-size-desktop);
+
+  }
+}
+
+h2 {
+  font-size: var(--font-size-mobile);
+  font-style: normal;
+  font-weight: 100;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768) {
+    font-size: var(--font-size-tablet)
+  }
+
+}
+
+h2 {
+  font-size: var(--font-size-mobile);
+  font-style: normal;
+  font-weight: 100;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768) {
+    font-size: var(--font-size-tablet)
+  }
+
+}
+
+p {
+  font-size: var(--font-size-regular);
+  font-style: normal;
+  font-weight: 100;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
 }
