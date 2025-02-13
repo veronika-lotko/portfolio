@@ -7,26 +7,37 @@ export const MainWrapper = styled.div`
   z-index: 10;
   padding: 20px;
   min-height: 200px;
-  max-width: 900px;
 
   @media ${mquery.tablet} {
     display: flex;
-    max-height: fit-content;
-
-    .content-container {
-      display: flex;
-      flex-direction: column;
-    }
+    align-items: center;
 
     .circle-container {
+      order: -1;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      position: relative;
     }
+
+    .content-container {
+      width: 100%;
+    }
+
+    h1 {
+      width: 100%;
+      white-space: nowrap;
+    }
+  }
+
+  @media ${mquery.desktop} {
+    max-width: 1200px;
   }
 
   .circle-container {
     display: flex;
     justify-content: end;
+    position: relative;
   }
 
   p {
@@ -34,6 +45,7 @@ export const MainWrapper = styled.div`
     mix-blend-mode: difference;
     @media ${mquery.tablet} {
       mix-blend-mode: color;
+      margin-top: 20px;
     }
   }
 
@@ -74,5 +86,9 @@ export const Circle = styled.div`
     height: 20px;
     margin: 50px 90px 0 0;
     background: var(--color3);
+  }
+
+  @media ${mquery.tablet} {
+    position: relative;
   }
 `;

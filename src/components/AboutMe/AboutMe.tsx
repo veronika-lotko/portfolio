@@ -6,13 +6,11 @@ import { breakpoints } from "../../constants";
 const AboutMeSection = () => {
   const { width } = useWindowSize();
   const screenWidth = width ?? 0;
-  const isMobile = screenWidth <= breakpoints.tablet;
+  const isMobile = screenWidth < breakpoints.tablet;
 
   return (
     <MainWrapper className="about-section" id="about">
-      <div className="title-container">
-        <h1>ABOUT ME</h1>
-      </div>
+      <h1>ABOUT ME</h1>
       <div className="content-container">
         <div className="circle-container">
           {isMobile ? (
