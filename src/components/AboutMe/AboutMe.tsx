@@ -1,12 +1,9 @@
 import React from "react";
 import { Circle, MainWrapper } from "./styles";
-import { useWindowSize } from "@uidotdev/usehooks";
-import { breakpoints } from "../../constants";
+import { useBreakpoints } from "../../helpers/useBreakpoints";
 
 const AboutMeSection = () => {
-  const { width } = useWindowSize();
-  const screenWidth = width ?? 0;
-  const isMobile = screenWidth < breakpoints.tablet;
+  const { isMobile } = useBreakpoints();
 
   return (
     <MainWrapper className="about-section" id="about">

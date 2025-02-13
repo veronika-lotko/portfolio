@@ -2,30 +2,29 @@ import styled from "styled-components";
 import { mquery } from "../../constants";
 
 export const MainWrapper = styled.div`
-  margin: auto;
+  margin: 20px auto;
   position: relative;
   z-index: 10;
   padding: 20px;
-  min-height: 200px;
 
   @media ${mquery.tablet} {
     display: flex;
     align-items: center;
+    min-height: 300px;
 
     .circle-container {
       order: -1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
     }
 
-    .content-container {
+    .content-container,
+    h1 {
       width: 100%;
     }
 
     h1 {
-      width: 100%;
       white-space: nowrap;
     }
   }
@@ -37,12 +36,12 @@ export const MainWrapper = styled.div`
   .circle-container {
     display: flex;
     justify-content: end;
-    position: relative;
   }
 
   p {
     margin-top: 120px;
     mix-blend-mode: difference;
+
     @media ${mquery.tablet} {
       mix-blend-mode: color;
       margin-top: 20px;
@@ -54,6 +53,11 @@ export const MainWrapper = styled.div`
     height: 100px;
     border-radius: 50%;
     margin: auto;
+
+    @media ${mquery.tablet} {
+      width: 190px;
+      height: 190px;
+    }
   }
 `;
 
@@ -61,13 +65,12 @@ export const Circle = styled.div`
   position: absolute;
   width: 200px;
   height: 200px;
-  background: white;
+  background: var(--color-white);
   border-radius: 50%;
   display: flex;
-  margin: 0;
 
   &.circle-2 {
-    margin: 0 120px 0 0;
+    margin-right: 120px;
     width: 110px;
     height: 110px;
     background: var(--color-hover);
