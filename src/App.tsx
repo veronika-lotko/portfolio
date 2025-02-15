@@ -11,7 +11,9 @@ function App() {
       <div className="background">
         <GradientBubbles />
         <Header />
-        <Home />
+        <div className="home-wrapper">
+          <Home />
+        </div>
       </div>
     </>
   );

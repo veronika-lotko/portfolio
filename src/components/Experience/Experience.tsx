@@ -26,7 +26,7 @@ const WorkExperienceSection = () => {
   const { isMobile } = useBreakpoints();
 
   return (
-    <MainWrapper id="experience">
+    <MainWrapper id="work" className="work-section">
       <h1>WORK EXPERIENCE</h1>
       <SwitcherWrapper>
         <StyledSwitcher

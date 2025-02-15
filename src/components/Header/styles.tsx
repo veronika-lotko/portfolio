@@ -43,9 +43,12 @@ export const StyledLink = styled.a`
 
 export const StyledBar = styled.nav`
   margin: auto;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 100;
 `;
 
 export const MenuButton = styled.button`
