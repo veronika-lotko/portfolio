@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 :root {
-  --color-bg1: rgb(108, 1, 124);
-  --color-bg2: rgb(4, 57, 154);
+  --color-bg1: rgb(97, 42, 174);
+  --color-bg2: rgb(14, 29, 114);
   --color1: 18, 113, 255;
   --color2: 221, 74, 255;
   --color3: 100, 220, 255;
@@ -33,11 +33,14 @@ html, body {
 
 .background {
   width: 100vw;
-  height: 200vw;
-  position: relative;
+  min-height: 100vh;
+  position: relative; /* Делаем его фиксированным, чтобы не прокручивался */
+  top: 0;
+  left: 0;
   overflow: hidden;
   background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
   align-items: center;
+  justify-content: center;
   text-align: center;
 
   svg {
