@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <div className="background">
+        <GradientBubbles />
         <Header />
         <Home />
-        <GradientBubbles />
       </div>
     </>
   );
