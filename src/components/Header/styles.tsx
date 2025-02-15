@@ -42,7 +42,7 @@ export const StyledLink = styled.a`
 `;
 
 export const StyledBar = styled.nav`
-  margin: 15px auto;
+  margin: auto;
   position: relative;
   z-index: 10;
   padding: 20px;
