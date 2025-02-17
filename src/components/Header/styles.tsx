@@ -49,6 +49,7 @@ export const StyledBar = styled.nav`
   padding: 20px;
   backdrop-filter: blur(10px);
   z-index: 100;
+  height: 80px;
 `;
 
 export const MenuButton = styled.button`

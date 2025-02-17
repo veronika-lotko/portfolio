@@ -19,6 +19,7 @@
   --font-size-title-tablet: 100px;
   --font-size-title-laptop: 120px;
   --font-size-title-desktop: 150px;
+  --font-size-xs: 18px;
   --font-size-mobile: 24px;
   --font-size-tablet: 38px;
   --font-size-laptop: 48px;
@@ -43,9 +44,9 @@ html, body {
   justify-content: center;
   text-align: center;
 
-  svg {
-    display: none;
-  } 
+  // svg {
+  //   display: none;
+  // } 
 }
 
 .home-wrapper {
