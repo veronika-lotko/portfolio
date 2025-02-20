@@ -5,9 +5,38 @@ import SwitchSelector from "react-switch-selector";
 export const MainWrapper = styled.div`
   margin: 30px auto;
   position: relative;
+  max-width: 920px;
+
+  .skills-wrapper {
+    display: block;
+    /* grid-template-columns: repeat(1, 1fr);
+    gap: 16px; */
+  }
 
   @media ${mquery.tablet} {
-    margin: 50px auto;
+    .skills-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+
+      .skill-category {
+        min-height: 162px;
+      }
+    }
+  }
+
+  @media ${mquery.laptop} {
+    .skills-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+
+      .skill-category {
+        min-height: 162px;
+      }
+    }
+  }
+
+  @media ${mquery.desktop} {
+    max-width: 1200px;
   }
 
   p {
@@ -34,7 +63,12 @@ export const MainWrapper = styled.div`
     p {
       color: var(--color-black);
       font-size: var(--font-size-xs);
-      margin: 3px auto;
+      margin: 3px;
+    }
+
+    a {
+      color: var(--color-black);
+      margin: 0 4px;
     }
   }
 `;
