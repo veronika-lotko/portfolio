@@ -88,6 +88,7 @@ export const SkillButton = styled.button`
   }
 
   svg {
+    margin: 10px;
     color: var(--color-white);
     &.active {
       color: var(--color-black);
