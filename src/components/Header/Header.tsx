@@ -1,8 +1,8 @@
 import React from "react";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
-import { useWindowSize } from "@uidotdev/usehooks";
 import { breakpoints } from "../../constants";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const NavigationBar = () => {
   const { width } = useWindowSize();

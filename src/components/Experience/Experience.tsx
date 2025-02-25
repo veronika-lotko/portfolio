@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { JobsWrapper, MainWrapper, StyledSwitcher, SwitcherWrapper } from "./styles";
-import { useWindowSize } from "@uidotdev/usehooks";
 import { useBreakpoints } from "../../helpers/useBreakpoints";
 
 const options = [

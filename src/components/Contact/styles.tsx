@@ -59,6 +59,10 @@ export const MainWrapper = styled.div`
       min-height: 200px;
     }
   }
+
+  .custom-toast-container {
+    font-family: var(--font);
+  }
 `;
 
 export const StyledButton = styled.button`
