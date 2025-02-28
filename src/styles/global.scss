@@ -35,8 +35,7 @@ html, body, input, textarea, button {
 
 .background {
   width: 100vw;
-  min-height: 100vh;
-  position: relative; /* Делаем его фиксированным, чтобы не прокручивался */
+  position: relative; 
   top: 0;
   left: 0;
   overflow: hidden;

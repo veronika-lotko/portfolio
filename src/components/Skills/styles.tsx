@@ -94,4 +94,10 @@ export const SkillButton = styled.button`
       color: var(--color-black);
     }
   }
+  &:hover {
+    background-color: var(--color-white);
+    svg {
+      color: var(--color-black);
+    }
+  }
 `;
