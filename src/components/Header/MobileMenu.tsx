@@ -10,6 +10,10 @@ const MobileMenu = () => {
     setIsOpened(true);
   };
 
+  const handleClose = () => {
+    setIsOpened(false);
+  };
+
   const handleButtonBack = () => {
     setIsOpened(false);
   };
@@ -25,7 +29,7 @@ const MobileMenu = () => {
           <MenuButton onClick={handleButtonBack}>
             <ArrowLeft className="arrow" />
           </MenuButton>
-          <MenuLink />
+          <MenuLink onClick={handleClose} />
         </MenuContainer>
       )}
     </>

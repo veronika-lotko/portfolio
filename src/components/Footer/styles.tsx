@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { mquery } from "../../constants";
-import SwitchSelector from "react-switch-selector";
 
 export const StyledFooter = styled.div`
   min-height: 100px;
@@ -37,6 +35,7 @@ export const StyledLink = styled.a`
   }
 
   &:hover {
+    transition: all 0.3s ease;
     background-color: var(--color-white);
     svg {
       color: var(--color-black);

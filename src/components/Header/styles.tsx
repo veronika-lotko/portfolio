@@ -8,7 +8,7 @@ export const StyledLink = styled.a`
   border-radius: 25px;
   margin: 20px;
   text-align: center;
-  font-size: 48px;
+  font-size: var(--font-size-tablet);
   position: relative;
   display: inline-block;
   backdrop-filter: blur(18px);
@@ -20,7 +20,6 @@ export const StyledLink = styled.a`
   }
 
   @media ${mquery.laptop} {
-    font-size: 28px;
     color: var(--color-white);
     border: 1px solid var(--color-white);
     &:hover {
@@ -34,10 +33,6 @@ export const StyledLink = styled.a`
       color: var(--color-black);
       box-shadow: 0 0 28px var(--color-hover);
     }
-  }
-
-  @media ${mquery.desktop} {
-    font-size: 36px;
   }
 `;
 

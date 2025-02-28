@@ -49,8 +49,8 @@ export const MainWrapper = styled.div`
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     margin: auto;
 
@@ -73,8 +73,7 @@ export const Circle = styled.div`
     margin-right: 120px;
     width: 110px;
     height: 110px;
-    background: var(--color-hover);
-    align-items: center;
+    box-shadow: 0 0 28px var(--color-hover);
   }
 
   &.circle-3 {

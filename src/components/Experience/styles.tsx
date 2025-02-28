@@ -22,12 +22,8 @@ export const StyledSwitcher = styled(SwitchSelector)``;
 export const JobsWrapper = styled.div`
   margin: 30px;
   max-width: 600px;
-  font-size: 28px;
+  font-size: var(--font-size-mobile);
 
-  li,
-  p {
-    font-size: var(--font-size-mobile);
-  }
   li {
     text-align: start;
   }

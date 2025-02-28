@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { mquery } from "../../constants";
-import SwitchSelector from "react-switch-selector";
 
 export const MainWrapper = styled.div`
   margin: 30px auto;
@@ -63,6 +62,17 @@ export const MainWrapper = styled.div`
   .custom-toast-container {
     font-family: var(--font);
   }
+
+  .sending {
+    background: gray;
+    color: var(--color-white);
+    cursor: not-allowed;
+    &:hover,
+    &:focus-visible {
+      background: gray;
+      color: var(--color-white);
+    }
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -83,6 +93,7 @@ export const StyledButton = styled.button`
   }
 
   &:hover {
+    transition: all 0.3s ease;
     background: var(--color-white);
     color: var(--color-black);
     transform: none;

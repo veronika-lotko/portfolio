@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { mquery } from "../../constants";
-import SwitchSelector from "react-switch-selector";
 
 export const MainWrapper = styled.div`
   margin: 30px auto;
@@ -9,8 +8,6 @@ export const MainWrapper = styled.div`
 
   .skills-wrapper {
     display: block;
-    /* grid-template-columns: repeat(1, 1fr);
-    gap: 16px; */
   }
 
   @media ${mquery.tablet} {
@@ -40,7 +37,6 @@ export const MainWrapper = styled.div`
   }
 
   p {
-    /* padding: 10px; */
     margin: 10px;
     font-size: var(--font-size-tablet);
   }
@@ -95,6 +91,8 @@ export const SkillButton = styled.button`
     }
   }
   &:hover {
+    transition: all 0.3s ease;
+
     background-color: var(--color-white);
     svg {
       color: var(--color-black);

@@ -44,7 +44,7 @@ const ContactSection = () => {
   });
 
   return (
-    <MainWrapper id="work" className="work-section">
+    <MainWrapper id="contact">
       <h1>CONTACT</h1>
 
       <ToastContainer
@@ -91,8 +91,8 @@ const ContactSection = () => {
               )}
             />
           </div>
-          <StyledButton type="submit" disabled={isSending}>
-            {isSending ? "Sending..." : "SEND"}
+          <StyledButton type="submit" disabled={isSending} className={isSending ? "sending" : ""}>
+            {isSending ? "Sending..." : "Send"}
           </StyledButton>
         </form>
       </div>
