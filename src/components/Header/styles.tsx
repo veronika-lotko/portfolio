@@ -55,10 +55,11 @@ export const MenuButton = styled.button`
   width: auto;
 
   svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
-    padding: 10px;
+    padding: 10px 15px;
+    z-index: 100;
   }
 
   .list {
@@ -81,4 +82,34 @@ export const MenuContainer = styled.div`
   background-color: var(--color-white);
   display: grid;
   align-items: center;
+`;
+
+export const ScrollUpButton = styled.button`
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+    transform: scale(1.1);
+  }
+
+  .arrow-up {
+    width: 24px;
+    height: 24px;
+  }
 `;
