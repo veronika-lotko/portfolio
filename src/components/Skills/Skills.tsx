@@ -96,20 +96,18 @@ const SkillsSection = () => {
             </div>
             {currentSkill && skills.some((skill) => skill.name === currentSkill) && (
               <div className="current-skill">
-                <p>
-                  {currentSkill}
-                  {currentSkill && skills.find((skill) => skill.name === currentSkill && skill.certificate) && (
-                    <a
-                      href={skills.find((skill) => skill.name === currentSkill)?.certificate}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaExternalLinkAlt size={9}>
-                        <div>{skills.find((skill) => skill.name === currentSkill)?.certificate}</div>
-                      </FaExternalLinkAlt>
-                    </a>
-                  )}
-                </p>
+                <a
+                  href={skills.find((skill) => skill.name === currentSkill)?.certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>
+                    {currentSkill}
+                    {currentSkill && skills.find((skill) => skill.name === currentSkill && skill.certificate) && (
+                      <FaExternalLinkAlt size={9} />
+                    )}
+                  </p>
+                </a>
               </div>
             )}
           </div>

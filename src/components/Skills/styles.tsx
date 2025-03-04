@@ -61,10 +61,14 @@ export const MainWrapper = styled.div`
       font-size: var(--font-size-xs);
       margin: 3px;
     }
+  }
 
-    a {
-      color: var(--color-black);
-      margin: 0 4px;
+  a {
+    color: var(--color-black);
+    text-decoration: none;
+
+    svg {
+      margin-left: 5px;
     }
   }
 `;
