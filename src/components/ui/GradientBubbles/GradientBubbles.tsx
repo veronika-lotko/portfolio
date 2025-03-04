@@ -27,7 +27,6 @@ const GradientBubbles: React.FC = () => {
 
     move();
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("mousemove", (event) => {
         tgX = event.clientX;

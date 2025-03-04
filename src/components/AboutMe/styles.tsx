@@ -34,13 +34,24 @@ export const MainWrapper = styled.div`
   }
 
   .circle-container {
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media ${mquery.tablet} {
+      display: flex;
+      position: relative;
+      justify-content: end;
+      transform: none;
+      left: 0;
+      top: 0;
+    }
   }
 
   p {
     margin-top: 120px;
     mix-blend-mode: difference;
+    padding: 0 10px;
 
     @media ${mquery.tablet} {
       mix-blend-mode: color;
